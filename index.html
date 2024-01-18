@@ -18,12 +18,37 @@
                 </div>
                 <div class="search-wrapper">
                     <div class="search-wrap">
-                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
                         <input type="text" class="search-input body3-fonts" placeholder="Search Pokémon" id="search-input">
+                        <i class="fa-solid fa-xmark" id="search-close-icon"></i>
+                    </div>
+                    <div class="sort-wrapper">
+                        <div class="sort-wrap">
+                            <i class="fa-solid fa-sort" id="sort-icon"></i>
+                        </div>
+                    </div>
+                    <div class="filter-wrapper">
+                        <p class="body2-fonts">Sort by:</p>
+                        <div class="filter-wrap">
+                            <div>
+                                <input type="radio" id="number" name="filters" value="number" checked>
+                                <label for="number" class="body3-fonts">Number</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="name" name="filters" value="name">
+                                <label for="name" class="body3-fonts">Name</label>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </header>
+        <section class="pokemon-list">
+            <div class="container">
+                <div class="list-wrapper"></div>
+            </div>
+            <div id="not-found-message">Pokémon not found</div>
+        </section>
     </main>
 </body>
 </html>
