@@ -6,14 +6,15 @@
     <title>Poxédex project</title>
     <link rel="stylesheet" href="style.css">
     <script src="pokedex.js"></script>
+    <script src="search.js"></script>
     <script src="https://kit.fontawesome.com/3f73c8b14d.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <main class="main">
-        <header class="header-home">
+        <header class="header home">
             <div class="container">
                 <div class="logo-wrapper">
-                    <img src=".idea/img/pokeball.jpg" height="60" width="60" alt="pokeball"/>
+                    <img src=".idea/img/pokeball.svg" alt="pokeball"/>
                     <h1>Pokédex</h1>
                 </div>
                 <div class="search-wrapper">
@@ -24,18 +25,18 @@
                     </div>
                     <div class="sort-wrapper">
                         <div class="sort-wrap">
-                            <i class="fa-solid fa-sort" id="sort-icon"></i>
+                            <img src=".idea/img/sorting.svg" alt="sorting" class="sort-icon" id="sort-icon">
                         </div>
                     </div>
                     <div class="filter-wrapper">
                         <p class="body2-fonts">Sort by:</p>
                         <div class="filter-wrap">
                             <div>
-                                <input type="radio" id="number" name="filters" value="number" checked>
+                                <input type="radio" id="number" name="filters" value="number">
                                 <label for="number" class="body3-fonts">Number</label>
                             </div>
                             <div>
-                                <input type="radio" id="name" name="filters" value="name">
+                                <input type="radio" id="name" name="filters" value="name" checked>
                                 <label for="name" class="body3-fonts">Name</label>
                             </div>
                         </div>
