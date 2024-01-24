@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', (event) => {
 
-const MAX_POKEMON = 100000; //can change this to a higher number
+const MAX_POKEMON = 649; //can change this to a higher number
 const listWrapper = document.querySelector(".list-wrapper");
 const searchInput = document.querySelector("#search-input");
 const numberFilter = document.querySelector("#number");
